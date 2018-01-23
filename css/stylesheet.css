@@ -1,0 +1,93 @@
+.container {
+    width : 80%;
+    margin : 120px auto;
+    border-bottom: 1px solid yellow;
+    outline: 1px solid green;
+}
+
+.div1 {
+    float: left;
+    width: 98%; 
+    height: 100px;
+    outline: 1px solid red;
+}
+
+.div2 {
+    float: left;
+    width: 33%;
+    height: 100px;
+    outline: 1px solid olive;
+}
+
+.div3 {
+    float: left;
+    width: 32%;
+    height: 100px;
+    outline: 1px solid fuchsia;
+}
+
+.div {
+    float: left;
+    width: 33%;
+    height: 100px;
+    outline: 1px solid maroon;
+}
+
+.div5 {
+    float: left;
+    width: 98%; 
+    height: 100px;
+    outline: 1px solid blue;
+}
+
+/* sample02.html */
+
+header {
+    padding: 0px;
+    text-align: center;
+    background-color: lightblue;
+}
+
+nav {
+    text-align: center;
+    background-color: cyan;
+    padding-top: 5px;
+    height: 40px;
+}
+
+ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+article {
+    padding: 5px;
+    border: dotted 3px #ff0066;
+    margin-top: 5px;
+    background-color: yellow;
+}
+
+aside {
+    padding: 5px;
+    border: double 5px #b200ff;
+    margin-top: 5px;
+    text-align: center;
+    font-style: italic;
+    background-color: lightskyblue;
+}
+
+section {
+    padding: 5px;
+    margin-top: 5px;
+    border: dashed 5px #0022ff;
+}
+
+footer {
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+}
