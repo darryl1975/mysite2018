@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script lang="javascript" type="text/javascript">
+        
+        /* global and local variable */
+        var data1="global";
+
+        function getData() {
+            var data="local";
+
+            alert("data: " + data1);
+        }
+        
+        function getData1() {
+            var data="local1";
+
+            alert("data: " + data);
+        }
+
+        // comparators
+        var a = true;
+        var b = false;
+
+        var result1 = (a && b);
+        var result2 = (a || b);
+        var result3 = !(a && b);
+        var result4 = !(a || b);
+
+        document.writeln(result1);
+        document.writeln(result2);
+        document.writeln(result3);
+        document.writeln(result4);
+
+        // if..else condition
+        var num1 = 4;
+        var num2 = 6;
+
+        // equal comparison
+        if (num1 == num2) {
+            document.writeln("num1 equals num2<br>");
+        } else {
+            if (num1 < num2) {
+                document.writeln("num1 is less than num2<br>");
+            } else if (num1 > num2) {
+                document.writeln("num1 is greater than num2<br>");
+            }
+        }
+
+        // array of strings/ list of string
+        var names = ['Sheau', 'Natasha', 'Sharil', 'Joel', 'Gareth', 'Cynthia'];
+
+        // array of number/ list of numbers
+        var numbers = [12, 24, 33, 35, 37, 42];
+
+        var names2 = [];
+
+        var numbers2 = [];
+
+        for(var i = 0; i < names.length; i++) {
+            document.write(names[i] + "<br>");
+        }
+
+        for(var i = 0; i < numbers.length; i++) {
+            document.write(numbers[i] + "<br>");
+        }
+
+        var x = 0;
+        while (x < names.length) {
+            document.write(names[x] + "<br>");
+            x++;
+        }
+
+        // take everything in array 'names' and put to array 'names2'
+        for(var i = 0; i < names.length; i++) {
+            names2.push(names[i]);
+        }
+
+        // print out everything that has been put to this array 'name2'
+        for (var i = 0; i < names2.length; i++) {
+            document.write(names2[i] + "<br>");
+        }
+
+        // switch case statement
+        var marks = 65;
+        var grade = "";
+
+        if (marks < 50) {
+            grade = "F";
+        } else if ((marks >= 50) && (marks < 60)) {
+            grade = "D";
+        } else if ((marks >= 60) && (marks < 70)) {
+            grade = "C";
+        } else {
+            grade = "B";
+        }
+
+        switch(grade) {
+            case "A":
+                document.write("Exceptionally well");
+                break;
+            case "B":
+                document.write("Moderately well");
+                getData();
+                break;
+            case "C":
+                document.write("Average");
+                getData1();
+                break;
+            case "D":
+                document.write("Poor");
+                break;
+            default: 
+                document.write("Failed the module<br>");
+                break;
+        }
+
+
+        </script>
+
+        <br>
+        <br>
+        <input type="button" value="Show Value" onclick="getData()" />
+    </body>
+</html>

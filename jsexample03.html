@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <script lang="javascript" type="text/javascript">
+        
+        function autoRefresh(t) {
+            setTimeout("location.reload(true);", t);
+        }
+
+        function redirectPage() {
+            window.location = "https://www.microsoft.com";
+        }
+        </script>
+    </head>
+    <body onload="javascript:autoRefresh(5000);">
+        <script lang="javascript" type="text/javascript">
+        var employee = {
+            name : "James",
+            email : "james@cook.com",
+            tel : "99999999"
+        }
+
+        var employeelist = [
+            {
+                name : "James",
+                email : "james@cook.com",
+                tel : "99999999"
+            },
+            {
+                name : "Mark",
+                email : "mark@cook.com",
+                tel : "88888888" 
+            },
+            {
+                name : "Lee",
+                email : "lee@cook.com",
+                tel : "77777777"
+            }
+        ]
+
+        document.write("Size of employeelist: " + employeelist.length);
+
+        var obj = Object.keys(employeelist);
+
+        document.write("<br>");
+        document.write("<table border=2 width=80% align=center>");
+            document.write("<thead>");
+            document.write("<tr>");
+            document.write("<th>"+obj[0].toString() +"</th>");
+            document.write("<th></th>");
+            document.write("<th></th>");
+            document.write("</tr>");
+            document.write("</thead>");
+        for(var i = 0; i < employeelist.length; i++) {
+            document.write("<tr>");
+            document.write("<td>" + employeelist[i].name + "</td>");
+            document.write("<td>" + employeelist[i].email + "</td>");
+            document.write("<td>" + employeelist[i].tel + "</td>");
+            document.write("</tr>");
+        }
+        document.write("</table>");
+        </script>
+
+        <a href="javascript:location.reload(true)">Refresh Page</a>
+    </body>
+</html>
+
+
