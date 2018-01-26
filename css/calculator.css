@@ -1,0 +1,151 @@
+body {
+    background: #777;
+}
+
+.background {
+    width: 300px;
+    height: 400px;
+    background: gray;
+    margin:50px auto;
+}
+
+button {
+    border: 0;
+    color: #fff;
+}
+
+#result {
+    display: block;
+    font-family: sans-serif;
+    width: 230px;
+    height: 40px;
+    margin: 10px auto;
+    background: #3bbbbb;
+    text-align: right;
+    color: #ffffff;
+    border: 0;
+    font-size: 20px;
+    letter-spacing: 4px;
+    padding-top: 15px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    top: 5px;
+}
+
+#result:hover {
+    cursor: text;
+}
+
+#first-rows {
+    margin-bottom: 20px;
+    position: relative;
+    top: 10px;
+    /* background-color: yellow; */
+}
+
+.rows {
+    width: 300px;
+    margin-top: 10px;
+    /* background-color: yellow; */
+}
+
+#delete {
+    width: 100px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 25px;
+}
+
+.btn-style {
+    width: 50px;
+    height: 50px;
+    margin-left: 5px;
+    border-radius: 5px;
+}
+
+.first-child {
+    margin-left: 25px;
+}
+
+.num-bg {
+    background: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+}
+
+.num-bg:active {
+    background: #000000;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 5px 5px 5px cyan;
+}
+
+.opera-bg {
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+}
+
+.opera-bg:active {
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 5px 5px 5px cyan;
+}
+
+.del-bg {
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+}
+
+.del-bg:active {
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 5px 5px 5px cyan;
+}
+
+.eqn-bg {
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    border-bottom: 5px solid #333;
+}
+
+.eqn-bg:active {
+    background: #333333;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: inset 5px 5px 5px cyan;
+}
+
+/* align add and equal buttons to the right */
+.align {
+    margin-left: 7px !important;
+}
+
+/* align percentge and period button to the right */
+.fall-back {
+    margin-left: 13px !important;
+}

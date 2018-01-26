@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+    <head>
+        <title>My HTML5 Calculator</title>
+
+        <link rel="stylesheet" type="text/css" href="./css/calculator.css">
+        <script lang="javascript" type="text/javascript" src="./js/calculator.js"></script>
+    </head>
+    <body>
+        <div class="background">
+            <div id="result">
+            </div>
+
+            <div id="main">
+                <div id="first-rows">
+                    <button id="delete" class="del-bg" >Del</button>
+                    <button value="%" class="btn-style opera-bg fall-back operator" >%</button>
+                    <button value="+" class="btn-style opera-bg align operator" >+</button>
+                </div>
+                
+                <div class="rows">
+                    <button value="7" class="btn-style first-child num-bg num" >7</button>                    
+                    <button value="8" class="btn-style num-bg num" >8</button>
+                    <button value="9" class="btn-style num-bg num" >9</button>
+                    <button value="-" class="btn-style opera-bg operator" >-</button>
+                </div>
+
+                <div class="rows">
+                    <button value="4" class="btn-style first-child num-bg num" >4</button>                    
+                    <button value="5" class="btn-style num-bg num" >5</button>
+                    <button value="6" class="btn-style num-bg num" >6</button>
+                    <button value="*" class="btn-style opera-bg operator" >*</button>
+                </div>
+
+                <div class="rows">
+                    <button value="1" class="btn-style first-child num-bg num" >1</button>                    
+                    <button value="2" class="btn-style num-bg num" >2</button>
+                    <button value="3" class="btn-style num-bg num" >3</button>
+                    <button value="/" class="btn-style opera-bg operator" >/</button>
+                </div>
+
+                <div class="rows">
+                    <button id="delete" value="0" class="num-bg zero">0</button>
+                    <button value="."  class="btn-style num-bg fall-back period" >.</button>
+                    <button id="eqn-bg" value="=" class="btn-style eqn-bg align" >=</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
